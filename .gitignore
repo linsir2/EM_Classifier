@@ -1,0 +1,139 @@
+# ==================== 1. Python基础 ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# ==================== 2. Conda环境（关键！） ====================
+# 不要提交整个conda环境，只提交environment.yml
+PhysicalProject/            # 你的环境名
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+*.conda
+
+# ==================== 3. 深度学习模型文件 ====================
+*.pth                 # PyTorch模型权重
+*.pt                  # PyTorch模型
+*.h5                  # Keras/HDF5模型
+*.pb                  # TensorFlow模型
+*.onnx                # ONNX模型
+*.pkl                 # Pickle序列化模型
+*.joblib              # Joblib序列化
+weights/
+checkpoints/
+models/               # 如果存放预训练模型
+saved_model/          # TensorFlow保存的模型
+lightning_logs/       # PyTorch Lightning日志
+
+# ==================== 4. 数据集（绝对不上传！） ====================
+data/
+datasets/
+*.csv
+*.xlsx
+*.json
+*.jsonl
+*.xml
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.npy
+*.data
+
+# ==================== 5. 实验日志和缓存 ====================
+logs/
+tensorboard/
+runs/
+wandb/                # Weights & Biases
+mlruns/               # MLflow
+*.log
+.cache/
+*.pyc
+*.pytest_cache/
+.coverage
+htmlcov/
+.parquet
+
+# ==================== 6. Jupyter Notebook ====================
+.ipynb_checkpoints
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==================== 7. IDE和编辑器 ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode-test
+.settings/
+.project
+.pydevproject
+
+# ==================== 8. 操作系统文件 ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==================== 9. 密钥和敏感信息 ====================
+.env
+*.key
+*.pem
+id_rsa
+config_secret.py
+secrets.yaml
+credentials.json
+
+# ==================== 10. Docker（如果用的话） ====================
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# ==================== 11. 特定框架 ====================
+# PyTorch
+torch_*.pth
+
+# TensorFlow
+tf_*.h5
+*.tflite
+
+# ==================== 例外：明确要上传的文件 ====================
+# 不要忽略这些重要文件：
+# !requirements.txt
+# !environment.yml
+# !README.md
+# !*.py（除非特定文件）
+# !.gitignore
